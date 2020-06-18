@@ -1,0 +1,10 @@
+#!/bin/sh
+
+default=eDP-1
+external=HDMI-2
+
+if xrandr | grep "$external disconnected"; then
+    xrandr --output "$external" --off --output "$default" --primary --auto
+else
+    xrandr --output "$default" --off --output "$external" --primary --mode 3840x2160 --rate 30 --pos 0x0 --rotate normal
+fi
