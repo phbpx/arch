@@ -65,5 +65,5 @@ alias edit-aliases='nvim ~/.config/aliases.sh'
 alias edit-exports='nvim ~/.config/exports.sh'
 alias edit-vimconfig='nvim ~/.config/nvim/init.vim'
 alias edit-i3='nvim ~/.config/i3/config'
-alias edit-i3blocks='nvim ~/.config/i3blocks/config'
+alias edit-i3blocks='nvim ~/.config/i3/i3blocks.conf'
 
