@@ -1,7 +1,7 @@
 [global]
     monitor = 0
     follow = mouse
-    geometry = "400x20-20+20"
+    geometry = "320x5-30+20"
     indicate_hidden = yes
     shrink = no
     transparency = 0
@@ -9,15 +9,15 @@
     separator_height = 2
     padding = 10
     horizontal_padding = 10
-    frame_width = 2
-    frame_color = "#83a598"
-    separator_color = "#585858"
+    frame_width = 3
+    frame_color = "#2b83a6"
+    separator_color = frame
     sort = yes
     idle_threshold = 120
     font = Fira Sans Book 10
     line_height = 0
     markup = full
-    format = "<b>%s</b>\n%b"
+    format = "<span foreground='#f3f4f5'><b>%s %p</b></span>\n%b"
     alignment = left
     show_age_threshold = 60
     word_wrap = yes
@@ -47,16 +47,18 @@
     context = ctrl+shift+period
 
 [urgency_low]
-    background = "#282828"
-    foreground = "#ebdbb2"
-    timeout = 5
+    background = "#232323"
+    foreground = "#a8a8a8"
+    timeout = 10
 
 [urgency_normal]
-    background = "#282828"
-    foreground = "#ebdbb2"
-    timeout = 20
+    background = "#232323"
+    foreground = "#a8a8a8"
+    timeout = 10
 
 [urgency_critical]
-    background = "#282828"
-    foreground = "#ebdbb2"
+    background = "#d64e4e"
+    foreground = "#f0e0e0"
+    frame_color = "#d64e4e"
     timeout = 0
+    icon = /usr/share/icons/Paper/16x16/status/dialog-warning.png

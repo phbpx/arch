@@ -29,14 +29,13 @@ export PROMPT_EOL_MARK=""
 export HISTORY_IGNORE="([bf]g|c|clear|e|exit|h|history|incognito|l|l[adfls]|pwd|z)"
 
 # fzf.
+export FZF_DEFAULT_COMMAND='rg --files --hidden'
+export FZF_CTRL_T_OPTS="--preview '([[ -f {} ]] && (bat --style=numbers --color=always {} || cat {}))'"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS=" \
-    --color=fg:#c0c5ce,bg:#212121,hl:#808080,fg+:#e6e6e6,bg+:#3b3b3b,hl+:#f7c662 \
-    --color=info:#f7c662,prompt:#6699cc,pointer:#a6bc69,marker:#a6bc69,spinner:#f7c662,header:#6699cc"
-
-# nnn.
-export NNN_BMS="d:~/Downloads;D:~/Documents;t:~/Temporary" # Bookmarks
-export NNN_PLUG="D:mediainf" # Plugins
-export NNN_TRASH=1 # Trash instead of delete the files
+  --layout=reverse --height 96% \
+  --color fg:#ebdbb2,bg:#282828,hl:#fabd2f,fg+:#ebdbb2,bg+:#3c3836,hl+:#fabd2f \
+  --color info:#83a598,prompt:#bdae93,spinner:#fabd2f,pointer:#83a598,marker:#fe8019,header:#665c54"
 
 # Less.
 export LESS="--RAW-CONTROL-CHARS"

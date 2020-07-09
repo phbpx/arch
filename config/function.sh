@@ -17,8 +17,8 @@ readme() {
 }
 
 # Weather
-weather() {
-    curl -s "https://wttr.in/${1:-Sao_Paulo}?m2F&format=v2"
+wttr() {
+    curl -s "https://wttr.in/${1:-Barueri}?m2F&format=v2"
 }
 
 # Git commit browser

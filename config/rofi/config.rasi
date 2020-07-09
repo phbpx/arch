@@ -3,7 +3,7 @@ configuration {
     lines: 12;
     font: "Ubuntu 12";
     show-icons: true;
-    theme: "oxide";
+    theme: "gruvbox-dark";
     display-window: "Window";
     display-drun: "Search";
 }

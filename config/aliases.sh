@@ -43,6 +43,7 @@ alias doc='cd ~/Documents && ls -lA'
 alias src='cd ~/Sources && ls -lA'
 
 # Shortcuts
+alias vim='nvim'
 alias c='clear'
 alias cat='bat'
 alias ch='echo > ~/.bash_history && echo > ~/.zsh_history'
@@ -57,13 +58,6 @@ alias mp3-dl='youtube-dl --ignore-config --extract-audio \
 alias n='nnn -deo'
 alias pbcopy='xclip -selection clipboard'
 alias pbpaste='xclip -selection clipboard -o'
-alias vim=nvim
-
-# Config
-alias edit-zshrc='nvim ~/.zshrc'
-alias edit-aliases='nvim ~/.config/aliases.sh'
-alias edit-exports='nvim ~/.config/exports.sh'
-alias edit-vimconfig='nvim ~/.config/nvim/init.vim'
-alias edit-i3='nvim ~/.config/i3/config'
-alias edit-i3blocks='nvim ~/.config/i3/i3blocks.conf'
-
+alias fzfi='rg --files --hidden --follow --no-ignore-vcs -g "!{node_modules,.git,.cache,BraveSoftware,Slack}" | fzf --preview "bat --style=numbers --color=always {}"'
+alias vifi='nvim $(fzfi)'
+alias packages="pacman -Qq | fzf --preview 'pacman -Qil {}' --layout=reverse --bind 'enter:execute(pacman -Qil {} | less)'"

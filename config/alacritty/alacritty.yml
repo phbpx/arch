@@ -23,19 +23,19 @@ scrolling:
 
 font:
   normal:
-    family: JetBrainsMono Nerd Font 
+    family: FiraMono Nerd Font
     style: Medium
 
   bold:
-    family: JetBrainsMono Nerd Font
+    family: FiraMono Nerd Font
     style: Bold
 
   italic:
-    family: JetBrainsMono Nerd Font
+    family: FiraMono Nerd Font
     style: Italic
 
   bold_italic:
-    family: JetBrainsMono Nerd Font
+    family: FiraMono Nerd Font
     style: Bold Italic
 
   size: 13
@@ -50,36 +50,31 @@ font:
 
 draw_bold_text_with_bright_colors: true
 
-# Oxide colors
+# Colors (Gruvbox Material Dark Medium)
 colors:
   primary:
-    background: '#212121'
-    foreground: '#c0c5ce'
-    bright_foreground: '#f3f4f5'
-
-  cursor:
-    text: '#212121'
-    cursor: '#c0c5ce'
+    background: '0x282828'
+    foreground: '0xdfbf8e'
 
   normal:
-    black:   '#212121'
-    red:     '#e57373'
-    green:   '#a6bc69'
-    yellow:  '#fac863'
-    blue:    '#6699cc'
-    magenta: '#c594c5'
-    cyan:    '#5fb3b3'
-    white:   '#c0c5ce'
+    black:   '0x665c54'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xe78a4e'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xdfbf8e'
 
   bright:
-    black:   '#5c5c5c'
-    red:     '#e57373'
-    green:   '#a6bc69'
-    yellow:  '#fac863'
-    blue:    '#6699cc'
-    magenta: '#c594c5'
-    cyan:    '#5fb3b3'
-    white:   '#f3f4f5'
+    black:   '0x928374'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xe3a84e'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xdfbf8e'
 
   indexed_colors: []
 
@@ -88,7 +83,7 @@ visual_bell:
   duration: 0
   color: '#ffffff'
 
-background_opacity: 1
+background_opacity: 0.96
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
